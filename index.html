@@ -12,22 +12,24 @@
     <!-- FA icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   </head>
+
   <body>
     <div class="container">
-      <nav>
-        <div class="leftside">
-          <img src="images/logo.png" alt="personal logo">
-        </div>
-        <ul class="rightside">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="mailto:andrewdrepko@gmail.com"><button type="button" name="contact">Contact</button></a></li>
-        </ul>
-      </nav>
+      <header>
+        <nav>
+          <div class="leftside">
+            <a href="index.html"><img src="images/logo.png" alt="personal logo"></a>
+          </div>
+          <ul class="rightside">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="mailto:andrewdrepko@gmail.com"><button type="button" name="contact">Contact</button></a></li>
+          </ul>
+        </nav>
+      </header>
 
       <div class="grid">
-        <div class="project">
         <section class="hero">
           <h1>Hi, I'm Andrew</h1>
           <p>I'm a UX/UI designer based in Phoenix, Arizona. <br>
@@ -35,16 +37,19 @@
             thoughtful user interaction. Oh, and I like to code too.
           </p>
         </section>
-        <section class="project_desc">
-          <h2>InStereo</h2>
-          <p>Collaborative workplaces, <br>
-          community events, and <br>
-        cloud-sharing. Designed <br>
-      for Bloc.io apprenticeship.</p>
-      <button type="button" name="view">View Case Study</button>
+        <section class="project_outline">
+          <div class="project_desc">
+            <h2>InStereo</h2>
+            <p>Collaborative workplaces, <br>
+            community events, and <br>
+          cloud-sharing. Designed <br>
+        for Bloc.io apprenticeship.</p>
+            <a href="project.html"><button type="button" name="view">View Case Study</button></a>
+          </div>
+          <div class="project_image">
+            <img src="images/ishero1.png" alt="instereo">
+          </div>
         </section>
-        <img src="images/ishero1.png" class="project_img" alt="instereo">
-        </div>
       </div>
 
       <footer>

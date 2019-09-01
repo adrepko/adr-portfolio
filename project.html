@@ -2,45 +2,308 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Repko | InStereo Case Study</title>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- FA icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   </head>
   <body>
     <div class="container">
 <!-- Navigation -->
-      <nav>
-        <div class="leftside">
-          <img src="images/logo.png" alt="personal logo">
-        </div>
-        <ul class="rightside">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="mailto:andrewdrepko@gmail.com"><button type="button" name="contact">Contact</button></a></li>
-        </ul>
-      </nav>
+      <header>
+        <nav>
+          <div class="leftside">
+            <a href="index.html"><img src="images/logo.png" alt="personal logo"></a>
+          </div>
+          <ul class="rightside">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="mailto:andrewdrepko@gmail.com"><button type="button" name="contact">Contact</button></a></li>
+          </ul>
+        </nav>
+      </header>
+
       <div class="grid">
         <!-- Hero -->
         <section class="hero">
           <p>Case Study</p>
           <h1>InStereo</h1>
           <p>InStereo is a cloud storage and music player app focused on bringing artists, creators, and listeners together in collaborative environments.</p>
-        </section>
-        <!-- Description -->
-        <section class="breakdown">
-        <img src="images/ishero1.png" alt="instereo" class="header image">
-        <ul class="sidebyside">
-        <li><a href="link"><button type="button" name="view">Desktop Prototype</button></a></li>
-        <li><a href="link"><button type="button" name="view">Mobile Prototype</button></a></li>
-        </ul>
+          <div class="breakdown">
+            <img src="images/ishero1.png" alt="instereo" class="header image">
+              <div class="buttonlink">
+                <a href="link"><button type="button" name="view">Desktop Prototype</button></a>
+              </div>
+              <div class="buttonlink">
+                <a href="link"><button type="button" name="view">Mobile Prototype</button></a>
+              </div>
+          </div>
         </section>
 
-        <!-- Bragging rights -->
-        <div class="">
+        <!-- Roles n Such -->
+        <section class="overview">
+          <div class="roles_content">
+            <div class="roles grid">
+              <div class="r_leftcol">
+                <div class="rh1">
+                  <h4>Design Roles</h4>
+                </div>
+                <div class="rp1">
+                  <p>UX Research, Visual Design, Branding</p>
+                </div>
+                <div class="rh2">
+                  <h4>Tools</h4>
+                </div>
+                <div class="rp2">
+                  <p>Pen and paper, Figma, Usability Hub, paint.net</p>
+                </div>
+              </div>
+              <div class="r_rightcol">
+                <div class="rh3">
+                  <h4>Deliverables</h4>
+                </div>
+                <div class="rp3">
+                  <p>User surveys, competitive analysis, personas, user stories and flows, branding and style guide, wireframes, prototypes, user testing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        </div>
+        <section class="initials section grid">
+          <div class="ini_cont">
+            <div class="standardtext">
+              <h3>Problem</h3>
+              <p>How would a new company approach cloud sharing from the music side of things? SoundCloud already exists and is doing great, so what grounds have gone yet-uncovered that can be explored
+              more fully without trying to compete directly with them? What spaces exist for a second music-focused cloud sharing app?</p>
+              <h3>Solution</h3>
+              <p>The solution was InStereo, a cloud storage service that combined all of the tools that musicians and creators looked for, focusing on the collaboration that respondents in the survey
+                indicated a serious desire for as well as the ability to explore a wide variety of music through a random music function. By offering a free option as well as centering the cheapest
+                option and highlighting it, multiple usability test respondents admitted that they felt that it was friendly rather than predatory and that they were more likely to consider a paid
+                option when presented with the data in that manner.</p>
+              <h3>Discovery & Strategy</h3>
+              <p>The first step was trying to look at competitors and see what they had on offer, and where InStereo could potentially carve out its own niche. Specifically, I selected SoundCloud,
+                  Google Drive, and Notion.so. I performed a SWOT analysis of all three and found a couple of key opportunities.</p>
+              <ul class="standard_list">
+                <li>SoundCloud as a platform does not commit to collaboration between its users</li>
+                <li>Notion.so is a good way to aggregate content in dedicated workspaces, but has limited editing capability</li>
+                <li>Google Drive is inflexible and while it has a broad appeal, more dedicated products can offer better specific alternatives</li>
+              </ul>
+            </div>
+
+          <!-- Image will be replaced by CSS-built tabs -->
+          <div class="click_bg">
+            <div class="swottab grid">
+              <img src="images/swottab.png" alt="">
+            </div>
+          </div>
+
+            <div class="standardtext">
+              <p>Next was determining exactly what users were looking for in terms of cloud sharing, and whether there was even room for it or whether users were tired of migrating from service to
+                service. Surveys were deployed to discover what options existed.<br><br>
+                What was discovered was that a lot of independent musicians and local bands were spread over so many different services for storage, communication, collaboration, et cetera, while many
+                music creators simply found it hard to find truly new music experiences with the prevalence of algorithmic experiences.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- User data -->
+        <!-- Images will be replaced by charts.js objects -->
+        <section class="userdata section grid">
+          <div class="bigchart">
+            <img src="images/bigchart.png" alt="">
+          </div>
+          <div class="smallchart">
+            <img src="images/chart1.svg" alt="">
+          </div>
+          <div class="smallchart">
+            <img src="images/chart2.svg" alt="">
+          </div>
+
+          <div class="stats1">
+            <h1 class="bignum">86%</h1>
+            <p>Use music services to look for new experiences at least once a week</p>
+          </div>
+          <div class="stats2">
+            <h1 class="bignum">72%</h1>
+            <p>View exposure to new music and sounds as highly important</p>
+          </div>
+
+          <div class="standardtext">
+            <h3>User Personas</h3>
+            <p>I did a series of follow-up interviews and from these created three user profiles, one for a musician, one for a creator, and one for a listener to encompass each of the three main
+              types of users on this potential platform.</p>
+          </div>
+
+          <!-- Image will be replaced by CSS-built tabs -->
+          <div class="click_bg">
+            <div class="ptab grid">
+              <img src="images/ptab.png" alt="">
+            </div>
+          </div>
+
+          <div class="side_cont">
+            <div class="sidetext">
+              <h3>Stories, Flows & Architecture</h3>
+              <p>Next, I modeled user stories and user flows based on those profiles and the survey responses. These stories and flows were primarily concerned with the musical and file storage/sharing
+                aspects of the site, including as high priority flows the ability to access PDFs, upload music to the cloud, and the ability to discover new music on the site.</p>
+            </div>
+            <div class="buttonlink">
+              <a href="link"><button type="button" name="button">View User Flows</button></a>
+            </div>
+            <!-- Image will be replaced by table js -->
+            <div class="sidetable">
+              <img src="images/stories.png" alt="">
+            </div>
+        </section>
+
+        <section class="wire section grid">
+          <div class="img_cont">
+            <div class="wideimage">
+              <img src="images/uisketch.png" alt="">
+            </div>
+            <div class="wideimage">
+              <img src="images/wireframes.png" alt="">
+            </div>
+          </div>
+
+          <div class="standardtext">
+            <h3>Wireframes, Lofi Prototyping & User Testing</h3>
+            <p>The first round of wireframes was designed specifically for usability, to attempt to put to paper (so to speak) the user flows above while trying to flesh out the basic design of
+              the page.</p>
+          </div>
+
+          <div class="buttonlink">
+            <a href="link"><button type="button" name="button">Lofi Prototype</button></a>
+          </div>
+
+          <div class="standardtext">
+            <p>User testing on this clickable prototype yielded some very good information. By testing a range of users, I gathered information that allowed us to locate a number of pain points.
+              Far and above the most useful response was the individual who experienced a number of unexpected pain points that did not occur among the other two participants. Particularly, the user
+              experienced a great amount of difficulty in both the flow for uploading a file and the flow for playing a random piece of music, largely due to verbiage and unintuitive placement of
+              buttons.<br><br>
+              While this could have been overlooked if it were just one particular moment of hesitation, that it was an issue across multiple screens suggested that there were issues with the design
+              for a subset of users that needed to be addressed.</p>
+          </div>
+
+          <div class="buttonlink">
+            <a href="link"><button type="button" name="button">User Testing</button></a>
+          </div>
+        </section>
+
+        <section class="brand section grid">
+          <div class="standardtext">
+            <h3>Branding</h3>
+            <p>To begin the brand development process, I started with a mind map focused on music and collaboration. From there, I gave a great deal of consideration to the types of people who would
+              associate with the brand, what associations I wanted it to have, and most importantly, what to evoke in people who utilized the site. Given the subject of music, I felt that passion and
+              energy were two key watchwords to focus on.</p>
+            <h3>Logo Design</h3>
+            <p>The logo concept started with a fairly scattershot approach. Initial concepts consisted of boomboxes and music notes, then shifted to stereo faces and digital interfaces, as well as
+              paraphernalia associated with music and stereos. However, the idea that sparked the most curiosity was the waveform.<br><br>
+              I recorded myself in Audacity saying “IS”, playing at the time with the idea of the logo as initials of the brand, and used that waveform as the foundation.<br><br>
+              The logo itself went through a number of adjustments, starting initially with the “IS” concept. However, this quickly gave way to a more standard but unpolished presentation, and then
+              to a simplified but striking logo.</p>
+          </div>
+
+          <div class="img_cont">
+            <div class="wideimage">
+              <img src="images/logosketch.png" alt="">
+            </div>
+            <div class="logosmall">
+              <img src="images/logooriginal.png" alt="">
+            </div>
+            <div class="logosmall">
+              <img src="images/logosecond.png" alt="">
+            </div>
+            <div class="logosmall">
+              <img src="images/logofinal.png" alt="">
+            </div>
+          </div>
+
+          <div class="standardtext">
+            <h3>Style Guide</h3>
+            <p>I then created a comprehensive style guide for InStereo, designed to communicate the totality of InStereo’s concept and approach to music, cloud storage, and collaboration.</p>
+          </div>
+
+          <!-- Image will be replaced by slides -->
+          <div class="click_bg">
+            <div class="slide_cont">
+              <img src="images/styleguide.png" alt="">
+              <button type="button" name="button">&#8249;</button>
+              <button type="button" name="button">&#8250;</button>
+            </div>
+          </div>
+
+          <div class="standardtext">
+            <h3>Visual Design</h3>
+            <p>Taking the old mockups and the feedback I received from the first round of user testing and combining them with the brand identity, I synthesized a more complete product and
+              created prototypes.</p>
+          </div>
+          <div class="buttonlink">
+            <a href="link"><button type="button" name="view">Desktop Prototype</button></a>
+          </div>
+          <div class="buttonlink">
+            <a href="link"><button type="button" name="view">Mobile Prototype</button></a>
+          </div>
+        </section>
+
+        <section class="testing section grid">
+          <h3>User-Driven Development</h3>
+          <p>The second round of testing was considerably more involved, and came in two waves. The first was preference testing, which analyzed user preferences in regards to functional and
+            aesthetic approaches.</p>
+          <div class="smallimage">
+            <img src="images/ishero1.png" alt="instereo version 1">
+          </div>
+          <div class="smallimage">
+            <img src="images/ishero2.png" alt="instereo version 2">
+          </div>
+          <p>Next came the second round of usability testing. This time around, there were no issues  related to user flows, but instead testers conflicted over aesthetic decisions. This led to
+            a second round of preference testing, which produced near-unanimous results.</p>
+          <div class="buttonlink">
+            <a href="link"><button type="button" name="view">View Test and Analysis</button></a>
+          </div>
+          <div class="colorhead highlight">
+            <h3>Before</h3>
+          </div>
+          <div class="colorhead highlight">
+            <h3>After</h3>
+          </div>
+          <div class="smallimage">
+            <img src="images/oldplayer.png" alt="old music player">
+          </div>
+          <div class="smallimage">
+            <img src="images/newplayer.png" alt="new music player">
+          </div>
+        </section>
+
+        <section class="conclusion section grid">
+          <h3>Conclusion</h3>
+          <p>With regards to doubts going into the project, I felt a very real sense of imposter syndrome many times, wondering if I had any real sense of design and understanding. However, as the
+            project marched on, what surprised me was the way that individual elements, through iteration, began to congeal into a coherent whole.<br><br>
+            If given more time, I would probably have spent more time looking at sites like dribbbler for potential inspiration for more specific elements, but in forcing myself to stay the course
+            and work largely from my own concepts I think I’ve forced myself to adapt and develop in a lot of ways. Going forward in future projects, I certainly want to utilize a broader number of
+            resources for inspiration and to hopefully make some of the in-between parts less painful, to feel less frustrated and nervous with what seems like a lack of development and instead focus
+            on the iterative process to develop my own eye and a better understanding of my own personal aesthetic.</p>
+        </section>
+
       </div>
 
-
+      <footer>
+        <h2>Get in touch!</h2>
+        <p>I always welcome questions and new connections.</p>
+        <ul class="socialmedia">
+          <li><a href="https://www.linkedin.com/in/andrew-repko-02727524/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/adrepko"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="mailto:andrewdrepko@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+          <li><a href="https://twitter.com/theillliterate"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </footer>
 
 
 
@@ -50,7 +313,6 @@
 
 
     <!-- Scripts -->
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<script type="text/javascript">
+
   </body>
 </html>
