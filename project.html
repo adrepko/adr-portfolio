@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andrew Repko | InStereo Case Study</title>
 
+    <!-- Type -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Oswald:400,600&display=swap" rel="stylesheet">
+
     <!-- Styling -->
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- FA icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -17,40 +20,48 @@
 <!-- Navigation -->
       <header>
         <nav>
-          <div class="leftside">
-            <a href="index.html"><img src="images/logo.png" alt="personal logo"></a>
-          </div>
-          <ul class="rightside">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="mailto:andrewdrepko@gmail.com"><button type="button" name="contact">Contact</button></a></li>
+          <ul class="head">
+            <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
+            <li class="menu_bar" id="menu_bar">
+              <button onclick="futurejs" name="button" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
+            </li>
+            <li class="menu_exp">
+              <ul class="nav_exp">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="mailto:andrewdrepko@gmail.com" class="stylebutton">Contact</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
 
-      <div class="grid">
-        <!-- Hero -->
-        <section class="hero">
-          <p>Case Study</p>
-          <h1>InStereo</h1>
-          <p>InStereo is a cloud storage and music player app focused on bringing artists, creators, and listeners together in collaborative environments.</p>
-          <div class="breakdown">
-            <img src="images/ishero1.png" alt="instereo" class="header image">
-              <div class="buttonlink">
-                <a href="link"><button type="button" name="view">Desktop Prototype</button></a>
-              </div>
-              <div class="buttonlink">
-                <a href="link"><button type="button" name="view">Mobile Prototype</button></a>
-              </div>
+        <div class="grid">
+          <!-- Hero -->
+          <section class="hero">
+            <p class="section_header">Case Study</p>
+            <h1>InStereo</h1>
+            <p>InStereo is a cloud storage and music player app focused on bringing artists, creators, and listeners together in collaborative environments.</p>
+          </section>
+        </div>
+
+          <div class="breakdown innergrid">
+            <div class="project_image">
+              <img src="images/ishero1.png" alt="instereo" class="pimage">
+            </div>
+            <div class="buttonlink" id="left">
+              <a href="link" class="stylebutton" target="_blank">PC Prototype</a>
+            </div>
+            <div class="buttonlink" id="right">
+              <a href="link" class="stylebutton" target="_blank">Mobile Prototype</a>
+            </div>
           </div>
-        </section>
 
         <!-- Roles n Such -->
-        <section class="overview">
+        <section class="overview section">
           <div class="roles_content">
             <div class="roles grid">
-              <div class="r_leftcol">
                 <div class="rh1">
                   <h4>Design Roles</h4>
                 </div>
@@ -63,15 +74,12 @@
                 <div class="rp2">
                   <p>Pen and paper, Figma, Usability Hub, paint.net</p>
                 </div>
-              </div>
-              <div class="r_rightcol">
                 <div class="rh3">
                   <h4>Deliverables</h4>
                 </div>
                 <div class="rp3">
                   <p>User surveys, competitive analysis, personas, user stories and flows, branding and style guide, wireframes, prototypes, user testing</p>
                 </div>
-              </div>
             </div>
           </div>
         </section>
@@ -96,20 +104,23 @@
                 <li>Google Drive is inflexible and while it has a broad appeal, more dedicated products can offer better specific alternatives</li>
               </ul>
             </div>
-
+          </div>
+        </section>
           <!-- Image will be replaced by CSS-built tabs -->
+        <section class="swot">
           <div class="click_bg">
             <div class="swottab grid">
               <img src="images/swottab.png" alt="">
             </div>
           </div>
+        </section>
 
-            <div class="standardtext">
-              <p>Next was determining exactly what users were looking for in terms of cloud sharing, and whether there was even room for it or whether users were tired of migrating from service to
-                service. Surveys were deployed to discover what options existed.<br><br>
-                What was discovered was that a lot of independent musicians and local bands were spread over so many different services for storage, communication, collaboration, et cetera, while many
+        <section class="section grid">
+          <div class="standardtext">
+            <p>Next was determining exactly what users were looking for in terms of cloud sharing, and whether there was even room for it or whether users were tired of migrating from service to
+                service. Surveys were deployed to discover what options existed.</p>
+            <p>What was discovered was that a lot of independent musicians and local bands were spread over so many different services for storage, communication, collaboration, et cetera, while many
                 music creators simply found it hard to find truly new music experiences with the prevalence of algorithmic experiences.</p>
-            </div>
           </div>
         </section>
 
@@ -127,10 +138,10 @@
           </div>
 
           <div class="stats1">
-            <h1 class="bignum">86%</h1>
+            <h1 class="highlight">86%</h1>
             <p>Use music services to look for new experiences at least once a week</p>
           </div>
-          <div class="stats2">
+          <div class="highlight">
             <h1 class="bignum">72%</h1>
             <p>View exposure to new music and sounds as highly important</p>
           </div>
@@ -155,9 +166,10 @@
                 aspects of the site, including as high priority flows the ability to access PDFs, upload music to the cloud, and the ability to discover new music on the site.</p>
             </div>
             <div class="buttonlink">
-              <a href="link"><button type="button" name="button">View User Flows</button></a>
+              <a href="link" class="stylebutton" target="_blank">View User Flows</a>
             </div>
-            <!-- Image will be replaced by table js -->
+          </div>
+            <!-- Image will be replaced by table css -->
             <div class="sidetable">
               <img src="images/stories.png" alt="">
             </div>
@@ -180,7 +192,7 @@
           </div>
 
           <div class="buttonlink">
-            <a href="link"><button type="button" name="button">Lofi Prototype</button></a>
+            <a href="link" class="stylebutton" target="_blank">Lofi Prototype</a>
           </div>
 
           <div class="standardtext">
@@ -193,7 +205,7 @@
           </div>
 
           <div class="buttonlink">
-            <a href="link"><button type="button" name="button">User Testing</button></a>
+            <a href="link" class="stylebutton" target="_blank">User Testing</a>
           </div>
         </section>
 
@@ -246,27 +258,34 @@
               created prototypes.</p>
           </div>
           <div class="buttonlink">
-            <a href="link"><button type="button" name="view">Desktop Prototype</button></a>
+            <a href="link" class="stylebutton" target="_blank">Desktop Prototype</a>
           </div>
           <div class="buttonlink">
-            <a href="link"><button type="button" name="view">Mobile Prototype</button></a>
+            <a href="link" class="stylebutton" target="_blank">Mobile Prototype</a>
           </div>
         </section>
 
         <section class="testing section grid">
-          <h3>User-Driven Development</h3>
-          <p>The second round of testing was considerably more involved, and came in two waves. The first was preference testing, which analyzed user preferences in regards to functional and
-            aesthetic approaches.</p>
+          <div class="standardtext">
+            <h3>User-Driven Development</h3>
+            <p>The second round of testing was considerably more involved, and came in two waves. The first was preference testing, which analyzed user preferences in regards to functional and
+              aesthetic approaches.</p>
+          </div>
           <div class="smallimage">
             <img src="images/ishero1.png" alt="instereo version 1">
           </div>
           <div class="smallimage">
             <img src="images/ishero2.png" alt="instereo version 2">
           </div>
-          <p>Next came the second round of usability testing. This time around, there were no issues  related to user flows, but instead testers conflicted over aesthetic decisions. This led to
-            a second round of preference testing, which produced near-unanimous results.</p>
+          <div class="standardtext">
+            <p>Next came the second round of usability testing. This time around, there were no issues  related to user flows, but instead testers conflicted over aesthetic decisions. This led to
+              a second round of preference testing, which produced near-unanimous results.</p>
+          </div>
+        </section>
+
+        <section class="testinginfo section grid">
           <div class="buttonlink">
-            <a href="link"><button type="button" name="view">View Test and Analysis</button></a>
+            <a href="link" class="stylebutton" target="_blank">View Test and Analysis</a>
           </div>
           <div class="colorhead highlight">
             <h3>Before</h3>
@@ -292,17 +311,18 @@
             on the iterative process to develop my own eye and a better understanding of my own personal aesthetic.</p>
         </section>
 
-      </div>
 
       <footer>
-        <h2>Get in touch!</h2>
-        <p>I always welcome questions and new connections.</p>
-        <ul class="socialmedia">
-          <li><a href="https://www.linkedin.com/in/andrew-repko-02727524/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/adrepko"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="mailto:andrewdrepko@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-          <li><a href="https://twitter.com/theillliterate"><i class="fab fa-twitter-square"></i></a></li>
-        </ul>
+        <div class="foot">
+          <h2>Get in touch!</h2>
+          <p>I always welcome questions and new connections.</p>
+          <ul class="socialmedia">
+            <li><a href="https://www.linkedin.com/in/andrew-repko-02727524/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/adrepko" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/theillliterate" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            <li><a href="mailto:andrewdrepko@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+          </ul>
+        </div>
       </footer>
 
 
