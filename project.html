@@ -106,14 +106,129 @@
             </div>
           </div>
         </section>
-          <!-- Image will be replaced by CSS-built tabs -->
-        <section class="swot">
-          <div class="click_bg">
-            <div class="swottab grid">
-              <img src="images/swottab.png" alt="">
+
+
+        <div class="click_bg">
+          <div class="grid">
+            <div class="tabs">
+
+              <input type="radio" name="tabs" id="tabone" checked="checked">
+              <label for="tabone">Drive</label>
+              <div class="tab">
+                <img src="images/drive.png" alt="google drive logo">
+                <div class="swottext">
+                  <h4>Strengths</h4>
+                  <ul>
+                    <li>Name recognition</li>
+                    <li>Breadth of files uploadable</li>
+                    <li>Best pricing options</li>
+                    <li>Strongest free option</li>
+                  </ul>
+                </div>
+                <div class="swottext">
+                  <h4>Weaknesses</h4>
+                  <ul>
+                    <li>Relatively inflexible - supports its basic ideas and uploaded files but otherwise no real ability to design custom or interactive things like to-do lists</li>
+                    <li>Collaborative offering is not particularly great</li>
+                  </ul>
+                </div>
+                <div class="swottext">
+                  <h4>Opportunities</h4>
+                  <ul>
+                    <li>Could aim for more workspace-style design, opening up many options and enabling much more in-depth collaborative space</li>
+                    <li>Increase interactive/editing capabilities to more file types</li>
+                  </ul>
+                </div>
+                <div class="swottext">
+                  <h4>Threats</h4>
+                  <ul>
+                    <li>Better free offering or pricing option for space/content</li>
+                    <li>Gaps in file/offering coverage that allow for a different product that better meets the needs of specific markets</li>
+                  </ul>
+                </div>
+              </div>
+
+              <input type="radio" name="tabs" id="tabtwo">
+              <label for="tabtwo">Notion.so</label>
+              <div class="tab">
+                  <img src="images/notion.png" alt="notion logo">
+                  <div class="swottext">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Collaborative workspace in forefront</li>
+                      <li>Ability to save pages/resources quickly for later</li>
+                      <li>Mobile access for collaboration</li>
+                      <li>Clean, easy design</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                      <li>Young, not much market penetration</li>
+                      <li>Broad usability cases means broad appeal but perhaps not a lot of staying power</li>
+                      <li>Very limited file type support</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Opportunities</h4>
+                    <ul>
+                      <li>Emphasize collaborative nature of app, find ways to expand focusing on that</li>
+                      <li>Determine ways to break into more specific fields, including PDF/file editing beyond general notepad/spreadsheet</li>
+                      <li>Expand file type selection</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Threats</h4>
+                    <ul>
+                      <li>Other companies like Google can steal their thunder by applying the workspace design to their own products</li>
+                      <li>As a result of their relative newness, easy to be pushed out of market</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tabthree">
+                <label for="tabthree">SoundCloud</label>
+                <div class="tab">
+                  <img src="images/soundcloud.png" alt="soundcloud logo">
+                  <div class="swottext">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Relevant content</li>
+                      <li>Easily accessible</li>
+                      <li>Culturally prevalent</li>
+                      <li>Varied content</li>
+                      <li>Multi-platform publishing</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                      <li>Multiplatform publishing can lead to diluted focus on primary platform</li>
+                      <li>Copy emphasizes “getting big first” on SoundCloud, but no real discussion of retaining talent on platform</li>
+                      <li>Content not clearly displayed on landing page</li>
+                      <li>Podcasts not given real position on landing page</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Opportunities</h4>
+                    <ul>
+                      <li>Capitalize on social media awareness</li>
+                      <li>Integrate Patreon awareness/support for creators</li>
+                      <li>Find more ways to push collaborative efforts between creators</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Threats</h4>
+                    <ul>
+                      <li>Spotify could close in on it if Spotify pushed to bring more new creators onto the program</li>
+                      <li>More podcast-oriented service could potentially uproot SoundCloud for up-and-coming podcasts given lack of pushed content</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-        </section>
 
         <section class="section grid">
           <div class="standardtext">
@@ -124,41 +239,113 @@
           </div>
         </section>
 
+        <section class="section grid">
+          <div class="centertext">
+            <h4>What cloud storage service do you use primarily for music?</h4>
+          </div>
+        </section>
+
         <!-- User data -->
         <!-- Images will be replaced by charts.js objects -->
         <section class="userdata section grid">
-          <div class="bigchart">
-            <img src="images/bigchart.png" alt="">
+          <div class="bigChart">
+            <canvas id="serviceChart" width=100% height=50%></canvas>
           </div>
-          <div class="smallchart">
-            <img src="images/chart1.svg" alt="">
+        </section>
+
+        <section class="section innergrid">
+          <div class="sc1">
+            <canvas class="chart1" id="useChart" width=100% height=50%></canvas>
           </div>
-          <div class="smallchart">
-            <img src="images/chart2.svg" alt="">
+          <div class="sc2">
+            <canvas class="chart2" id="importChart" width=100% height=50%></canvas>
           </div>
 
           <div class="stats1">
             <h1 class="highlight">86%</h1>
             <p>Use music services to look for new experiences at least once a week</p>
           </div>
-          <div class="highlight">
-            <h1 class="bignum">72%</h1>
+          <div class="stats2">
+            <h1 class="highlight">72%</h1>
             <p>View exposure to new music and sounds as highly important</p>
           </div>
+        </section>
 
+        <section class="section grid">
           <div class="standardtext">
             <h3>User Personas</h3>
             <p>I did a series of follow-up interviews and from these created three user profiles, one for a musician, one for a creator, and one for a listener to encompass each of the three main
               types of users on this potential platform.</p>
           </div>
+        </section>
 
           <!-- Image will be replaced by CSS-built tabs -->
           <div class="click_bg">
-            <div class="ptab grid">
-              <img src="images/ptab.png" alt="">
-            </div>
-          </div>
+            <div class="grid">
+              <div class="tabs">
 
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">Ray</label>
+                <div class="tab">
+                  <img src="images/ray.png" alt="user persona ray">
+                  <div class="personatext">
+                    <h4>Goals</h4>
+                    <ul>
+                      <li>Wants the ability to explore music catalogues quickly and intuitively</li>
+                      <li>Wants to be able to save music with easy access across any device</li>
+                    </ul>
+                  </div>
+                  <div class="personatext">
+                    <h4>Frustrations</h4>
+                    <ul>
+                      <li>Lack of a clean interface for keeping track of artists he discovers</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">Jee</label>
+                <div class="tab">
+                    <img src="images/jee.png" alt="user persona jee">
+                    <div class="personatext">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li>Wants version control on music</li>
+                        <li>Wants more of an all-in-one workspace, able to access music program file types</li>
+                      </ul>
+                    </div>
+                    <div class="swottext">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li>Algorithms limit exposure to new music</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="tabs" id="tabthree">
+                  <label for="tabthree">Brandon</label>
+                  <div class="tab">
+                    <img src="images/brandon.png" alt="user persona brandon">
+                    <div class="personatext">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li>Wants a solid recommendation engine to explore different genres</li>
+                        <li>Wants an easy way to interact with and play with different musicians</li>
+                      </ul>
+                    </div>
+                    <div class="personatext">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li>Difficulty browsing through performances of same pieces</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        <section class="innergrid">
           <div class="side_cont">
             <div class="sidetext">
               <h3>Stories, Flows & Architecture</h3>
@@ -330,9 +517,9 @@
 
     </div>
 
-
-
     <!-- Scripts -->
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="scripts/script.js"></script>
+    <script src="scripts/chart-data.js"></script>
   </body>
 </html>
