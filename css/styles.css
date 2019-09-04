@@ -50,8 +50,16 @@ a {
 }
 
 label {
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
+}
+
+.standardtext h3 {
+  padding-bottom: 10px;
+}
+
+.standardtext p {
+  font-size: 14px;
 }
 
 .highlight {
@@ -272,7 +280,7 @@ button {
   order: initial;
   width: 100%;
   display: block;
-  padding: .5em .5em;
+  padding: 1em 1em;
   cursor: pointer;
   background: #e2e2e2;
   font-weight: bold;
@@ -299,7 +307,10 @@ button {
   position: absolute; opacity: 0;
 }
 
-.tabs input[type="radio"]:checked + label { background: #e2e2e2; }
+.tabs input[type="radio"] + label {
+  border: 2px solid black;
+}
+.tabs input[type="radio"]:checked + label { background: #A3A3A3; }
 .tabs input[type="radio"]:checked + label + .tab { display: block; }
 
 .tabs img {
@@ -307,7 +318,7 @@ button {
   height: auto;
   margin-left: auto;
   margin-right:auto;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   display: block;
 }
 
@@ -328,16 +339,21 @@ button {
 
 /* Small chart grid */
 
-.chart1 {
-  grid-column: 2 / 7;
+.bigChart {
   width: 100%;
-  height: 50%;
+  height: auto;
 }
 
-.chart2 {
+.sc1 {
+  grid-column: 2 / 7;
+  width: 100%;
+  height: auto;
+}
+
+.sc2 {
   grid-column: 7 / 12;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .stats1 {
@@ -350,10 +366,199 @@ button {
   text-align: center;
 }
 
+/* Persona tabs */
+
+.ptabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ptabs label {
+  -webkit-box-ordinal-group: NaN;
+  -webkit-order: initial;
+  -ms-flex-order: initial;
+  order: initial;
+  width: 100%;
+  display: block;
+  padding: 1em 1em;
+  cursor: pointer;
+  background: #e2e2e2;
+  border-style: outset;
+  font-weight: bold;
+  -webkit-transition: background ease 0.2s;
+  transition: background ease 0.2s;
+}
+
+.ptabs .ptab {
+  -webkit-box-ordinal-group: NaN;
+  -webkit-order: initial;
+  -ms-flex-order: initial;
+  order: initial;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  background: #e2e2e2;
+  justify-content: center;
+}
+
+.ptabs input[type="radio"] {
+  position: absolute; opacity: 0;
+}
+
+.ptabs input[type="radio"] + label {
+  border: 2px solid black;
+}
+.ptabs input[type="radio"]:checked + label { background: #a3a3a3; }
+.ptabs input[type="radio"]:checked + label + .ptab { display: block; }
+
+.ptabs img {
+  width: 100px;
+  height: auto;
+  margin-left: auto;
+  margin-right:auto;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.ptabs h4 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.ptabs ul {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
 .personatext {
   padding-left: 20px;
   padding-bottom: 20px;
 }
+
+/* User Flows */
+
+.sidetext {
+  grid-column: 2 / -2;
+  grid-row: 1 / 2;
+}
+
+.user .buttonlink {
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+}
+
+.sidetable {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.user_table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.user_table th {
+  background-color: #4c4d57;
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1rem .8rem;
+}
+
+.user_table td {
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: #e2e2e2;
+}
+
+tr:nth-child(odd) td {
+  background-color: #FFF;
+}
+
+/* Wireframes */
+
+.user {
+  margin-bottom: 25px;
+}
+
+.wideimage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wires .standardtext {
+  grid-column: 2 / 12;
+}
+
+.wires .buttonlink {
+  grid-column: 2 / 6;
+}
+
+/* Branding */
+
+.brand p {
+  margin-bottom: 25px;
+}
+
+.slide_cont {
+  display: block;
+  position: relative;
+}
+
+.styleguideSlides {
+   width: 100%;
+}
+
+.slide {
+  display: none;
+}
+
+.click_left, .click_right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+
+.click_right {
+  right: 0;
+}
+
+.visual .standardtext {
+  grid-column: 2 / 12;
+}
+
+.leftside {
+ grid-column: 2 / 6;
+}
+
+.rightside {
+  grid-column: 8 / 12;
+}
+
 
 /* Footer */
 

@@ -249,16 +249,16 @@
         <!-- Images will be replaced by charts.js objects -->
         <section class="userdata section grid">
           <div class="bigChart">
-            <canvas id="serviceChart" width=100% height=50%></canvas>
+            <canvas id="serviceChart"></canvas>
           </div>
         </section>
 
         <section class="section innergrid">
           <div class="sc1">
-            <canvas class="chart1" id="useChart" width=100% height=50%></canvas>
+            <canvas class="chart1" id="useChart"></canvas>
           </div>
           <div class="sc2">
-            <canvas class="chart2" id="importChart" width=100% height=50%></canvas>
+            <canvas class="chart2" id="importChart"></canvas>
           </div>
 
           <div class="stats1">
@@ -282,11 +282,11 @@
           <!-- Image will be replaced by CSS-built tabs -->
           <div class="click_bg">
             <div class="grid">
-              <div class="tabs">
+              <div class="ptabs">
 
-                <input type="radio" name="tabs" id="tabone" checked="checked">
-                <label for="tabone">Ray</label>
-                <div class="tab">
+                <input type="radio" name="tabs" id="ptabone" checked="checked">
+                <label for="ptabone">Ray</label>
+                <div class="ptab">
                   <img src="images/ray.png" alt="user persona ray">
                   <div class="personatext">
                     <h4>Goals</h4>
@@ -303,9 +303,9 @@
                   </div>
                 </div>
 
-                <input type="radio" name="tabs" id="tabtwo">
-                <label for="tabtwo">Jee</label>
-                <div class="tab">
+                <input type="radio" name="tabs" id="ptabtwo">
+                <label for="ptabtwo">Jee</label>
+                <div class="ptab">
                     <img src="images/jee.png" alt="user persona jee">
                     <div class="personatext">
                       <h4>Goals</h4>
@@ -314,7 +314,7 @@
                         <li>Wants more of an all-in-one workspace, able to access music program file types</li>
                       </ul>
                     </div>
-                    <div class="swottext">
+                    <div class="personatext">
                       <h4>Frustrations</h4>
                       <ul>
                         <li>Algorithms limit exposure to new music</li>
@@ -322,9 +322,9 @@
                     </div>
                   </div>
 
-                  <input type="radio" name="tabs" id="tabthree">
-                  <label for="tabthree">Brandon</label>
-                  <div class="tab">
+                  <input type="radio" name="tabs" id="ptabthree">
+                  <label for="ptabthree">Brandon</label>
+                  <div class="ptab">
                     <img src="images/brandon.png" alt="user persona brandon">
                     <div class="personatext">
                       <h4>Goals</h4>
@@ -345,9 +345,8 @@
               </div>
             </div>
 
-        <section class="innergrid">
-          <div class="side_cont">
-            <div class="sidetext">
+        <section class="user innergrid">
+            <div class="sidetext standardtext">
               <h3>Stories, Flows & Architecture</h3>
               <p>Next, I modeled user stories and user flows based on those profiles and the survey responses. These stories and flows were primarily concerned with the musical and file storage/sharing
                 aspects of the site, including as high priority flows the ability to access PDFs, upload music to the cloud, and the ability to discover new music on the site.</p>
@@ -355,30 +354,139 @@
             <div class="buttonlink">
               <a href="link" class="stylebutton" target="_blank">View User Flows</a>
             </div>
-          </div>
             <!-- Image will be replaced by table css -->
             <div class="sidetable">
-              <img src="images/stories.png" alt="">
+              <table class="user_table">
+                <thead>
+                  <tr>
+                    <th scope="col">Role</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Importance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>As a new user</td>
+                    <td>I want to create an account</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a new user</td>
+                    <td>I want to upload music files to my account</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have access to scores/PDFs</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to have access to collaborative project files</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to have access to recommendations</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to save tracks I like</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to have a true 'random song' option</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to share songs I like</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have my scores available for review</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to record a sample that others can use</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to have version control over my files</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have MIDI reading of scores</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have scrolling scores</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have mixing/composing competitions</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to see different performances of one piece</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to have an easy way to classify performances</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to connect to other users for live sessions</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to save and use music as I like</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to create and share custom playlists</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to view public playlists</td>
+                    <td>Low</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </section>
 
-        <section class="wire section grid">
-          <div class="img_cont">
+          <section class="section grid">
             <div class="wideimage">
-              <img src="images/uisketch.png" alt="">
+              <img src="images/uisketch.png" alt="dashboard sketches">
             </div>
             <div class="wideimage">
-              <img src="images/wireframes.png" alt="">
+              <img src="images/wireframes.png" alt="dashboard wireframe">
             </div>
-          </div>
+          </section>
 
+        <section class="wires section innergrid">
           <div class="standardtext">
             <h3>Wireframes, Lofi Prototyping & User Testing</h3>
             <p>The first round of wireframes was designed specifically for usability, to attempt to put to paper (so to speak) the user flows above while trying to flesh out the basic design of
               the page.</p>
           </div>
 
-          <div class="buttonlink">
+          <div class="buttonlink innerlink">
             <a href="link" class="stylebutton" target="_blank">Lofi Prototype</a>
           </div>
 
@@ -431,23 +539,46 @@
           </div>
 
           <!-- Image will be replaced by slides -->
-          <div class="click_bg">
             <div class="slide_cont">
-              <img src="images/styleguide.png" alt="">
-              <button type="button" name="button">&#8249;</button>
-              <button type="button" name="button">&#8250;</button>
+              <div class="slide"
+                <img class="styleguideSlides" src="images/styleguide.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide2.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide3.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide4.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide5.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide6.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide7.png">
+              </div>
+              <div class="slide">
+                <img class="styleguideSlides" src="images/styleguide8.png">
+              </div>
+              <a class="slidebutton click_left" onClick="plusSlides(-1)">&#10094;</a>
+              <a class="slidebutton click_right" onClick="plusSlides(1)">&#10095;</a>
             </div>
-          </div>
+          </section>
 
+          <section class="visual innergrid section">
           <div class="standardtext">
             <h3>Visual Design</h3>
             <p>Taking the old mockups and the feedback I received from the first round of user testing and combining them with the brand identity, I synthesized a more complete product and
               created prototypes.</p>
           </div>
-          <div class="buttonlink">
-            <a href="link" class="stylebutton" target="_blank">Desktop Prototype</a>
+          <div class="buttonlink leftside">
+            <a href="link" class="stylebutton" target="_blank">PC Prototype</a>
           </div>
-          <div class="buttonlink">
+          <div class="buttonlink rightside">
             <a href="link" class="stylebutton" target="_blank">Mobile Prototype</a>
           </div>
         </section>
