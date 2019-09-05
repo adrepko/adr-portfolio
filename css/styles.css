@@ -519,10 +519,6 @@ tr:nth-child(odd) td {
   position: relative;
 }
 
-.styleguideSlides {
-   width: 100%;
-}
-
 .slide {
   display: none;
 }
