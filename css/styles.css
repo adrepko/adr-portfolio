@@ -13,10 +13,7 @@ hover: #18395e
    background-position: right 7px top 10px;
    background-attachment: scroll;
    background-size: 50%;
-   max-height: 794px;
-   max-width: 731px;
-   min-height: 277px;
-   min-width: 255px;
+
  }
 
 
@@ -92,6 +89,26 @@ text-align: center;
   background-color: #18395e;
 }
 
+/* Global */
+
+.innergrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-row-gap: 10px;
+}
+
+.grid > * {
+  grid-column: 2 / -2;
+  min-width: 0;
+}
+
 
 /* Header */
 header {
@@ -132,16 +149,7 @@ button {
 } */
 
 /* Main text */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-row-gap: 10px;
-}
 
-.grid > * {
-  grid-column: 2 / -2;
-  min-width: 0;
-}
 
 .hero {
   margin-bottom: 50px;
@@ -161,13 +169,6 @@ button {
 .project {
   background-color: #e2e2e2;
   padding: 50px 0px;
-}
-
-.innergrid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-row-gap: 20px;
 }
 
 .project_outline h2 {
@@ -213,16 +214,14 @@ button {
 }
 
 .breakdown #left {
-  grid-row: 2 / 3;
   grid-column: 2 / 6;
 }
 
 .breakdown #right {
-  grid-row: 2 / 3;
   grid-column: 8 / 12;
 }
 
-.roles_content {
+.grey_content {
   background-color: #e2e2e2;
   padding: 25px 0px;
   margin-bottom: 25px;
@@ -501,11 +500,6 @@ tr:nth-child(odd) td {
   margin-bottom: 25px;
 }
 
-.wideimage {
-  width: 100%;
-  object-fit: cover;
-}
-
 .wires .standardtext {
   grid-column: 2 / 12;
 }
@@ -558,6 +552,39 @@ tr:nth-child(odd) td {
 .rightside {
   grid-column: 8 / 12;
 }
+
+.img-cont .logolarge {
+  grid-column: 2 / 12;
+}
+
+.img-cont .logosmall {
+  grid-column: 3 / 11;
+}
+
+.slide_cont {
+  margin-bottom: 25px;
+}
+
+.testing .standardtext {
+  grid-column: 2 / -2;
+}
+
+.testing .smallimage {
+  grid-column: 2 / -2;
+}
+
+.testing .buttonlink {
+  grid-column: 2 / 6;
+}
+
+.combined-one {
+  grid-column: 2 / -2;
+}
+
+.combined-two {
+  grid-column: 2 / -2;
+}
+
 
 
 /* Footer */
