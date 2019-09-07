@@ -18,24 +18,38 @@
   <body>
     <div class="container">
 <!-- Navigation -->
-      <header>
-        <nav>
-          <ul class="head">
-            <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
-            <li class="menu_bar" id="menu_bar">
-              <button onclick="futurejs" name="button" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
-            </li>
-            <li class="menu_exp">
-              <ul class="nav_exp">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="mailto:andrewdrepko@gmail.com" class="stylebutton">Contact</a></li>
-              </ul>
-            </li>
+    <header>
+      <div id="hamburg-menu">
+        <div class="hamburg-content">
+          <div class="hamburg-nav">
+            <a href="index.html" class="logo"><img src="images/logowhite.png" alt="white personal logo"></a>
+            <button id="close_nav" onclick="closeNavMenu()" class="close-button">x</button>
+          </div>
+          <ul class="hamburg-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/items/Resume.pdf">Resume</a></li>
+            <li><a href="mailto:andrewdrepko@gmail.com">Contact</a></li>
           </ul>
-        </nav>
-      </header>
+        </div>
+      </div>
+      <nav>
+        <ul class="head">
+          <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
+          <li class="menu_bar" id="menu_bar">
+            <button onclick="openNavMenu()" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
+          </li>
+          <li class="menu_exp">
+            <ul class="nav_exp">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="/items/Resume.pdf">Resume</a></li>
+              <li><a href="mailto:andrewdrepko@gmail.com"><div class="stylebutton email">Contact</div></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
         <div class="grid">
           <!-- Hero -->
@@ -650,7 +664,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <!-- <script type="scripts/script.js"></script> -->
+    <script src="scripts/script.js"></script>
     <script src="scripts/chart-data.js"></script>
     <script>
       var slideIndex = 1;
