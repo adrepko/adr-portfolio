@@ -61,23 +61,23 @@
         <!-- Roles n Such -->
         <section class="overview section">
           <div class="grey_content">
-            <div class="roles grid">
+            <div class="roles">
                 <div class="rh1">
                   <h4>Design Roles</h4>
-                </div>
-                <div class="rp1">
+                <!-- </div>
+                <div class="rp1"> -->
                   <p>UX Research, Visual Design, Branding</p>
                 </div>
                 <div class="rh2">
                   <h4>Tools</h4>
-                </div>
-                <div class="rp2">
+                <!-- </div>
+                <div class="rp2"> -->
                   <p>Pen and paper, Figma, Usability Hub, paint.net</p>
                 </div>
                 <div class="rh3">
                   <h4>Deliverables</h4>
-                </div>
-                <div class="rp3">
+                <!-- </div>
+                <div class="rp3"> -->
                   <p>User surveys, competitive analysis, personas, user stories and flows, branding and style guide, wireframes, prototypes, user testing</p>
                 </div>
             </div>
@@ -109,7 +109,7 @@
 
 
         <div class="click_bg">
-          <div class="grid">
+          <div class="grid tabsgrid">
             <div class="tabs">
 
               <input type="radio" name="tabs" id="tabone" checked="checked">
@@ -281,10 +281,10 @@
 
           <!-- Image will be replaced by CSS-built tabs -->
           <div class="click_bg">
-            <div class="grid">
+            <div class="grid tabsgrid">
               <div class="ptabs">
 
-                <input type="radio" name="tabs" id="ptabone" checked="checked">
+                <input type="radio" name="ptabs" id="ptabone" checked="checked">
                 <label for="ptabone">Ray</label>
                 <div class="ptab">
                   <img src="images/ray.png" alt="user persona ray">
@@ -303,7 +303,7 @@
                   </div>
                 </div>
 
-                <input type="radio" name="tabs" id="ptabtwo">
+                <input type="radio" name="ptabs" id="ptabtwo">
                 <label for="ptabtwo">Jee</label>
                 <div class="ptab">
                     <img src="images/jee.png" alt="user persona jee">
@@ -322,7 +322,7 @@
                     </div>
                   </div>
 
-                  <input type="radio" name="tabs" id="ptabthree">
+                  <input type="radio" name="ptabs" id="ptabthree">
                   <label for="ptabthree">Brandon</label>
                   <div class="ptab">
                     <img src="images/brandon.png" alt="user persona brandon">
@@ -517,29 +517,31 @@
               The logo itself went through a number of adjustments, starting initially with the “IS” concept. However, this quickly gave way to a more standard but unpolished presentation, and then
               to a simplified but striking logo.</p>
           </div>
+        </section>
 
           <div class="img-cont innergrid grey_content">
             <div class="logolarge">
               <img src="images/logosketch.png" class="pimage" alt="">
             </div>
-            <div class="logosmall">
+            <div class="logo1">
               <img src="images/logooriginal.png" class="pimage" alt="">
             </div>
-            <div class="logosmall">
+            <div class="logo2">
               <img src="images/logosecond.png" class="pimage" alt="">
             </div>
-            <div class="logosmall">
+            <div class="logo3">
               <img src="images/logofinal.png" class="pimage" alt="">
             </div>
           </div>
 
+          <section class="brand section grid">
           <div class="standardtext">
             <h3>Style Guide</h3>
             <p>I then created a comprehensive style guide for InStereo, designed to communicate the totality of InStereo’s concept and approach to music, cloud storage, and collaboration.</p>
           </div>
 
           <!-- Image will be replaced by slides -->
-            <div class="slide_cont">
+            <div class="slide_cont click_bg">
               <div class="slide">
                 <img class="pimage" src="images/styleguide.png">
               </div>
@@ -654,7 +656,30 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script type="scripts/script.js"></script>
+    <!-- <script type="scripts/script.js"></script> -->
     <script src="scripts/chart-data.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
   </body>
 </html>
