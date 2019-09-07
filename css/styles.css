@@ -776,7 +776,8 @@ tr:nth-child(odd) td {
   .tabsgrid {
     grid-template-columns: 2fr 8fr 2fr;
   }
-
+  
+}
 
 /* Footer */
 
