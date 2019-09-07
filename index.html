@@ -20,18 +20,32 @@
     <div class="container">
       <div class="upper">
         <header>
+          <div id="hamburg-menu">
+            <div class="hamburg-content">
+              <div class="hamburg-nav">
+                <a href="index.html" class="logo"><img src="images/logowhite.png" alt="white personal logo"></a>
+                <button id="close_nav" onclick="closeNavMenu()" class="close-button">x</button>
+              </div>
+              <ul class="hamburg-links">
+                <li><a href="index.html#projects" onClick="closeNavMenu()">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="/items/Resume.pdf">Resume</a></li>
+                <li><a href="mailto:andrewdrepko@gmail.com">Contact</a></li>
+              </ul>
+            </div>
+          </div>
           <nav>
             <ul class="head">
               <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
               <li class="menu_bar" id="menu_bar">
-                <button onclick="futurejs" name="button" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
+                <button onclick="openNavMenu()" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
               </li>
               <li class="menu_exp">
                 <ul class="nav_exp">
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Resume</a></li>
-                  <li><a href="mailto:andrewdrepko@gmail.com"><div class="stylebutton email">Contact</div></a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="/items/Resume.pdf">Resume</a></li>
+                  <li><a href="mailto:andrewdrepko@gmail.com">Contact</a></li>
                 </ul>
               </li>
             </ul>
@@ -95,8 +109,6 @@
     </div>
 
     <!-- Scripts -->
-    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script> -->
     <script src="scripts/script.js"></script>
-    <!-- <script src="scripts/chart-data.js"></script> -->
   </body>
 </html>

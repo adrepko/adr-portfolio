@@ -130,6 +130,46 @@ header {
   height: 100px;
 }
 
+#hamburg-menu {
+  background-color: #4c4d57;
+  bottom: 0;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#close_nav {
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.hidden {
+  cursor: pointer;
+}
+
+.hamburg-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 31px;
+}
+
+.hamburg-content > ul {
+    padding-top: 5em;
+}
+
+.hamburg-links a {
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.75em;
+  padding: 0 31px;
+}
+
 nav {
   margin: 30px 31px;
 }
@@ -151,16 +191,6 @@ button {
 .menu_exp {
   display: none;
 }
-
-
-/* For media queries */
- /* .nav_exp li {
-  display: inline-flex;
-  float: right;
-  font-size: 12px;
-  padding-left: 10px;
-  align-items: center;
-} */
 
 /* Main text */
 
@@ -710,6 +740,26 @@ tr:nth-child(odd) td {
     background-size: 30%;
   }
 
+/* Nav */
+
+.menu_bar {
+  display: none;
+}
+
+.menu_exp {
+  display: flex;
+}
+
+.nav_exp ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_exp a {
+  padding: 4vh 2vw;
+}
+
   /* Hero */
   .hero {
     width: 50%;
@@ -776,7 +826,7 @@ tr:nth-child(odd) td {
   .tabsgrid {
     grid-template-columns: 2fr 8fr 2fr;
   }
-  
+
 }
 
 /* Footer */
