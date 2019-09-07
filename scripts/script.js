@@ -1,21 +1,9 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var menuDiv = document.getElementById("hamburg-menu");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function openNavMenu() {
+  menuDiv.style.display = "block";
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
+function closeNavMenu() {
+  menuDiv.style.display = "none";
+};

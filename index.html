@@ -18,41 +18,57 @@
 
   <body>
     <div class="container">
-      <header>
-        <nav>
-          <ul class="head">
-            <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
-            <li class="menu_bar" id="menu_bar">
-              <button onclick="futurejs" name="button" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
-            </li>
-            <li class="menu_exp">
-              <ul class="nav_exp">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="mailto:andrewdrepko@gmail.com"><div class="stylebutton email">Contact</div></a></li>
+      <div class="upper">
+        <header>
+          <div id="hamburg-menu">
+            <div class="hamburg-content">
+              <div class="hamburg-nav">
+                <a href="index.html" class="logo"><img src="images/logowhite.png" alt="white personal logo"></a>
+                <button id="close_nav" onclick="closeNavMenu()" class="close-button">x</button>
+              </div>
+              <ul class="hamburg-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="/items/Resume.pdf">Resume</a></li>
+                <li><a href="mailto:andrewdrepko@gmail.com">Contact</a></li>
               </ul>
-          </li>
-          </ul>
-        </nav>
-      </header>
+            </div>
+          </div>
+          <nav>
+            <ul class="head">
+              <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
+              <li class="menu_bar" id="menu_bar">
+                <button onclick="openNavMenu()" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
+              </li>
+              <li class="menu_exp">
+                <ul class="nav_exp">
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="/items/Resume.pdf">Resume</a></li>
+                  <li><a href="mailto:andrewdrepko@gmail.com"><div class="stylebutton email">Contact</div></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-      <div class="grid">
-        <section class="hero">
-          <h1>Hi, I'm Andrew</h1>
-          <p>I'm a UX/UI designer based in Phoenix, Arizona. <br>
-            I create <span class="highlight">simple</span>, <span class="highlight">elegant</span> and <span class="highlight">intuitive</span> designs to drive
-            thoughtful user interaction. Oh, and I like to code too.
-          </p>
-        </section>
+        <div class="grid">
+          <section class="hero">
+            <h1>Hi, I'm Andrew</h1>
+            <p>I'm a UX/UI designer based in Phoenix, Arizona. <br>
+              I create <span class="highlight">simple</span>, <span class="highlight">elegant</span> and <span class="highlight">intuitive</span> designs to drive
+              thoughtful user interaction. Oh, and I like to code too.
+            </p>
+          </section>
+        </div>
       </div>
 
       <div class="scrollbutton">
-        <button onclick="futurejquery" id="scrolldown"><i class="fas fa-chevron-down fa-3x"></i></button>
+        <a href="#projects" class="scrollDown"><i class="fas fa-chevron-down fa-3x"></i></a>
       </div>
 
       <div class="project">
-        <section class="project_outline">
+        <section class="project_outline" id="projects">
           <div class="innergrid">
             <div class="project_desc">
               <h2>InStereo</h2>
@@ -93,8 +109,8 @@
     </div>
 
     <!-- Scripts -->
-    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script>
-    <script type="scripts/script.js"></script>
-    <script src="scripts/chart-data.js"></script> -->
+    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script> -->
+    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/chart-data.js"></script> -->
   </body>
 </html>
