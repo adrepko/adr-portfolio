@@ -250,6 +250,7 @@ button {
 .project .buttonlink {
   grid-row: 3 / 4;
   grid-column: 4 / 10;
+  margin: auto;
 }
 
 /* Case Study */
@@ -720,6 +721,14 @@ tr:nth-child(odd) td {
     font-size: 50px;
   }
 
+  .breakdown #left {
+    grid-column: 4 / 6;
+  }
+
+  .breakdown #right {
+    grid-column: 8 / 10;
+  }
+
   .img-cont {
     display: grid;
   }
@@ -739,6 +748,14 @@ tr:nth-child(odd) td {
     grid-area: 2/10/3/12;
     max-width: 240px;
     margin-left: auto;
+  }
+
+  .leftside {
+   grid-column: 4 / 6;
+  }
+
+  .rightside {
+    grid-column: 8 / 10;
   }
 
 
@@ -849,14 +866,6 @@ tr:nth-child(odd) td {
     max-width: 230px;
   }
 
-  .breakdown #left {
-    grid-column: 4 / 6;
-  }
-
-  .breakdown #right {
-    grid-column: 8 / 10;
-  }
-
   .roles {
     grid-template-columns: repeat(12,1fr);
   }
@@ -932,14 +941,6 @@ tr:nth-child(odd) td {
 
   .visual .standardtext {
     grid-column: 4 / 10;
-  }
-
-  .leftside {
-   grid-column: 4 / 6;
-  }
-
-  .rightside {
-    grid-column: 8 / 10;
   }
 
   .testing .standardtext {
