@@ -264,7 +264,7 @@ button {
 }
 
 .breakdown .project_image {
-  grid-column: 2 / -2;
+  grid-column: 1 / -1;
 }
 
 .breakdown #left {
@@ -676,7 +676,7 @@ tr:nth-child(odd) td {
 }
 
 .testing .smallimage {
-  grid-column: 2 / -2;
+  grid-column: 1 / -1;
 }
 
 .testing .buttonlink {
@@ -873,6 +873,10 @@ tr:nth-child(odd) td {
     margin: auto 0px;
     max-width: 230px;
   }
+ 
+ .breakdown .project_image {
+  grid-column: 2 / -2;
+}
 
   .roles {
     grid-template-columns: repeat(12,1fr);
