@@ -816,6 +816,10 @@ tr:nth-child(odd) td {
   body {
     background-size: 30%;
   }
+ 
+ a {
+  font-size: 16px;
+ }
 
 /* Nav */
 
