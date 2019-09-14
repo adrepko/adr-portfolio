@@ -586,6 +586,10 @@ tr:nth-child(odd) td {
 
 /* Wireframes */
 
+.wideimage {
+  grid-column: 1 / -1;
+}
+
 .user {
   margin-bottom: 25px;
 }
@@ -648,7 +652,7 @@ tr:nth-child(odd) td {
 }
 
 .img-cont .logolarge {
-  grid-column: 2 / 12;
+  grid-column: 1 / -1;
 }
 
 .img-cont .logo1 {
