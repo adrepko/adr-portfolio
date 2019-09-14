@@ -733,8 +733,12 @@ tr:nth-child(odd) td {
     display: grid;
   }
 
+  .img-cont .logolarge {
+    grid-column: 3 / 11;
+  }
+
   .img-cont .logo1 {
-    grid-area: 2/2/3/4;
+    grid-area: 2/3/3/5;
     max-width: 240px;
   }
 
@@ -745,7 +749,7 @@ tr:nth-child(odd) td {
   }
 
   .img-cont .logo3 {
-    grid-area: 2/10/3/12;
+    grid-area: 2/9/3/11;
     max-width: 240px;
     margin-left: auto;
   }
