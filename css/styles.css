@@ -696,7 +696,7 @@ tr:nth-child(odd) td {
 }
 
 .bio .image {
-  grid-column: 5 / 9;
+  grid-column: 3 / 11;
 }
 
 @media screen and (min-width: 575px){
@@ -1002,7 +1002,7 @@ tr:nth-child(odd) td {
   }
 
   .bio .image {
-    grid-column: 6 / 8;
+    grid-column: 4 / 10;
   }
 
 }
