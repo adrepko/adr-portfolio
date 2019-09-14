@@ -683,12 +683,12 @@ tr:nth-child(odd) td {
   grid-column: 2 / 6;
 }
 
-.combined-one {
-  grid-column: 2 / -2;
+.colorhead-one {
+  grid-column: 2 / -1;
 }
 
-.combined-two {
-  grid-column: 2 / -2;
+.colorhead-two {
+  grid-column: 2 / -1;
 }
 
 .bio .standardtext {
@@ -971,12 +971,20 @@ tr:nth-child(odd) td {
     grid-column: 4 / 6;
   }
 
-  .combined-one {
-    grid-column: 2 / 6;
+  .colorhead-one {
+    grid-area: 1/2/2/6;
   }
 
-  .combined-two {
-    grid-column: 8 / 12;
+  .colorhead-two {
+    grid-area: 1/8/2/12;
+  }
+
+  .smallleft {
+    grid-area: 2/2/3/6;
+  }
+
+  .smallright {
+    grid-area: 2/8/3/12;
   }
 
   /* Bio */
