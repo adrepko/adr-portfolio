@@ -675,7 +675,7 @@ tr:nth-child(odd) td {
   grid-column: 2 / -2;
 }
 
-.testing .smallimage {
+.smallimage {
   grid-column: 1 / -1;
 }
 
