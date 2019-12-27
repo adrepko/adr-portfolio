@@ -816,6 +816,10 @@ tr:nth-child(odd) td {
   body {
     background-size: 30%;
   }
+ 
+ a {
+  font-size: 16px;
+ }
 
  a {
   font-size: 16px;
@@ -877,6 +881,10 @@ tr:nth-child(odd) td {
     margin: auto 0px;
     max-width: 230px;
   }
+ 
+ .breakdown .project_image {
+  grid-column: 2 / -2;
+}
 
  .breakdown .project_image {
   grid-column: 2 / -2;
