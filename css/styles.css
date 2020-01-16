@@ -76,6 +76,10 @@ label {
   text-align: center;
 }
 
+.standard_list {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 /* Button */
 
 .buttonlink {
@@ -253,6 +257,10 @@ button {
   margin: auto;
 }
 
+.project .simplifi {
+  margin-bottom: 20px;
+}
+
 /* Case Study */
 
 .breakdown {
@@ -273,6 +281,11 @@ button {
 
 .breakdown #right {
   grid-column: 8 / 12;
+}
+
+.breakdown #single {
+  grid-column: 6 / 8;
+  justify-self: center;
 }
 
 .grey_content {
@@ -426,6 +439,12 @@ button {
   grid-column: 7 / 12;
   width: 100%;
   height: auto;
+}
+
+.stats {
+  grid-column: 2 / -2;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .stats1 {
@@ -651,6 +670,11 @@ tr:nth-child(odd) td {
   grid-column: 8 / 12;
 }
 
+.visual #single {
+  grid-column: 6 / 8;
+  justify-self: center;
+}
+
 .img-cont .logolarge {
   grid-column: 1 / -1;
 }
@@ -665,6 +689,14 @@ tr:nth-child(odd) td {
 
 .img-cont .logo3 {
   grid-column: 3 / 11;
+}
+
+.img-cont .logo4 {
+  grid-column: 3 / 11;
+  .grid-row: 3 / 4;
+  max-height: 106px;
+  max-width: 111px;
+  justify-self: center;
 }
 
 .slide_cont {
@@ -685,10 +717,12 @@ tr:nth-child(odd) td {
 
 .colorhead-one {
   grid-column: 2 / -1;
+  justify-self: center;
 }
 
 .colorhead-two {
   grid-column: 2 / -1;
+  justify-self: center;
 }
 
 .bio .standardtext {
@@ -816,7 +850,7 @@ tr:nth-child(odd) td {
   body {
     background-size: 30%;
   }
- 
+
  a {
   font-size: 16px;
  }
@@ -881,7 +915,7 @@ tr:nth-child(odd) td {
     margin: auto 0px;
     max-width: 230px;
   }
- 
+
  .breakdown .project_image {
   grid-column: 2 / -2;
 }

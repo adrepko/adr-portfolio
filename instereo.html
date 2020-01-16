@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Repko | InStereo Case Study</title>
+
+    <!-- Type -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Oswald:400,600&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FA icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  </head>
+  <body>
+    <div class="container">
+<!-- Navigation -->
+    <header>
+      <div id="hamburg-menu">
+        <div class="hamburg-content">
+          <div class="hamburg-nav">
+            <a href="index.html" class="logo"><img src="images/logowhite.png" alt="white personal logo"></a>
+            <button id="close_nav" onclick="closeNavMenu()" class="close-button">x</button>
+          </div>
+          <ul class="hamburg-links">
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/items/Resume.pdf">Resume</a></li>
+            <li><a href="mailto:andrewdrepko@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <ul class="head">
+          <li class="logo"><a href="index.html"><img src="images/smalllogo.png" alt="personal logo"></a></li>
+          <li class="menu_bar" id="menu_bar">
+            <button onclick="openNavMenu()" class="hidden"><i class="fas fa-bars fa-2x"></i></button>
+          </li>
+          <li class="menu_exp">
+            <ul class="nav_exp">
+              <li><a href="index.html#projects">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="/items/Resume.pdf">Resume</a></li>
+              <li><a href="mailto:andrewdrepko@gmail.com">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+        <div class="innergrid">
+          <!-- Hero -->
+          <section class="hero">
+            <p class="section_header">Case Study</p>
+            <h1>InStereo</h1>
+            <p>InStereo is a cloud storage and music player app focused on bringing artists, creators, and listeners together in collaborative environments.</p>
+          </section>
+        </div>
+
+          <div class="breakdown innergrid">
+            <div class="project_image">
+              <img src="images/instereo/ishero1.png" alt="instereo" class="pimage">
+            </div>
+            <div class="buttonlink" id="left">
+              <a href="https://www.figma.com/file/CPtTy8Pfpro85G233A9pwX/Hi-Fi-Mockup-Ver-1?node-id=48%3A2" class="stylebutton">PC Prototype</a>
+            </div>
+            <div class="buttonlink" id="right">
+              <a href="https://www.figma.com/file/CPtTy8Pfpro85G233A9pwX/Hi-Fi-Mockup-Ver-1?node-id=102%3A2" class="stylebutton">Mobile Prototype</a>
+            </div>
+          </div>
+
+        <!-- Roles n Such -->
+        <section class="overview section">
+          <div class="grey_content">
+            <div class="roles">
+                <div class="rh1">
+                  <h4>Design Roles</h4>
+                  <p>UX Research, Visual Design, Branding</p>
+                </div>
+                <div class="rh2">
+                  <h4>Tools</h4>
+                  <p>Pen and paper, Figma, Usability Hub, paint.net</p>
+                </div>
+                <div class="rh3">
+                  <h4>Deliverables</h4>
+                  <p>User surveys, competitive analysis, personas, user stories and flows, branding and style guide, wireframes, prototypes, user testing</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="initials section grid">
+          <div class="ini_cont">
+            <div class="standardtext">
+              <h3>Problem</h3>
+              <p>How would a new company approach cloud sharing from the music side of things? SoundCloud already exists and is doing great, so what grounds have gone yet-uncovered that can be explored
+              more fully without trying to compete directly with them? What spaces exist for a second music-focused cloud sharing app?</p>
+              <h3>Solution</h3>
+              <p>The solution was InStereo, a cloud storage service that combined all of the tools that musicians and creators looked for, focusing on the collaboration that respondents in the survey
+                indicated a serious desire for as well as the ability to explore a wide variety of music through a random music function. By offering a free option as well as centering the cheapest
+                option and highlighting it, multiple usability test respondents admitted that they felt that it was friendly rather than predatory and that they were more likely to consider a paid
+                option when presented with the data in that manner.</p>
+              <h3>Discovery & Strategy</h3>
+              <p>The first step was trying to look at competitors and see what they had on offer, and where InStereo could potentially carve out its own niche. Specifically, I selected SoundCloud,
+                  Google Drive, and Notion.so. I performed a SWOT analysis of all three and found a couple of key opportunities.</p>
+              <ul class="standard_list">
+                <li>• SoundCloud as a platform does not commit to collaboration between its users</li>
+                <li>• Notion.so is a good way to aggregate content in dedicated workspaces, but has limited editing capability</li>
+                <li>• Google Drive is inflexible and while it has a broad appeal, more dedicated products can offer better specific alternatives</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="click_bg">
+          <div class="grid tabsgrid">
+            <div class="tabs">
+
+              <input type="radio" name="tabs" id="tabone" checked="checked">
+              <label for="tabone">Drive</label>
+              <div class="tab">
+                <img src="images/instereo/drive.png" alt="google drive logo">
+                <div class="swottext">
+                  <h4>Strengths</h4>
+                  <ul>
+                    <li>• Name recognition</li>
+                    <li>• Breadth of files uploadable</li>
+                    <li>• Best pricing options</li>
+                    <li>• Strongest free option</li>
+                  </ul>
+                </div>
+                <div class="swottext">
+                  <h4>Weaknesses</h4>
+                  <ul>
+                    <li>• Relatively inflexible - supports its basic ideas and uploaded files but otherwise no real ability to design custom or interactive things like to-do lists</li>
+                    <li>• Collaborative offering is not particularly great</li>
+                  </ul>
+                </div>
+                <div class="swottext">
+                  <h4>Opportunities</h4>
+                  <ul>
+                    <li>• Could aim for more workspace-style design, opening up many options and enabling much more in-depth collaborative space</li>
+                    <li>• Increase interactive/editing capabilities to more file types</li>
+                  </ul>
+                </div>
+                <div class="swottext">
+                  <h4>Threats</h4>
+                  <ul>
+                    <li>• Better free offering or pricing option for space/content</li>
+                    <li>• Gaps in file/offering coverage that allow for a different product that better meets the needs of specific markets</li>
+                  </ul>
+                </div>
+              </div>
+
+              <input type="radio" name="tabs" id="tabtwo">
+              <label for="tabtwo">Notion.so</label>
+              <div class="tab">
+                  <img src="images/instereo/notion.png" alt="notion logo">
+                  <div class="swottext">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>• Collaborative workspace in forefront</li>
+                      <li>• Ability to save pages/resources quickly for later</li>
+                      <li>• Mobile access for collaboration</li>
+                      <li>• Clean, easy design</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                      <li>• Young, not much market penetration</li>
+                      <li>• Broad usability cases means broad appeal but perhaps not a lot of staying power</li>
+                      <li>• Very limited file type support</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Opportunities</h4>
+                    <ul>
+                      <li>• Emphasize collaborative nature of app, find ways to expand focusing on that</li>
+                      <li>• Determine ways to break into more specific fields, including PDF/file editing beyond general notepad/spreadsheet</li>
+                      <li>• Expand file type selection</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Threats</h4>
+                    <ul>
+                      <li>• Other companies like Google can steal their thunder by applying the workspace design to their own products</li>
+                      <li>• As a result of their relative newness, easy to be pushed out of market</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tabthree">
+                <label for="tabthree">SoundCloud</label>
+                <div class="tab">
+                  <img src="images/instereo/soundcloud.png" alt="soundcloud logo">
+                  <div class="swottext">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>• Relevant content</li>
+                      <li>• Easily accessible</li>
+                      <li>• Culturally prevalent</li>
+                      <li>• Varied content</li>
+                      <li>• Multi-platform publishing</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                      <li>• Multiplatform publishing can lead to diluted focus on primary platform</li>
+                      <li>• Copy emphasizes “getting big first” on SoundCloud, but no real discussion of retaining talent on platform</li>
+                      <li>• Content not clearly displayed on landing page</li>
+                      <li>• Podcasts not given real position on landing page</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Opportunities</h4>
+                    <ul>
+                      <li>• Capitalize on social media awareness</li>
+                      <li>• Integrate Patreon awareness/support for creators</li>
+                      <li>• Find more ways to push collaborative efforts between creators</li>
+                    </ul>
+                  </div>
+                  <div class="swottext">
+                    <h4>Threats</h4>
+                    <ul>
+                      <li>• Spotify could close in on it if Spotify pushed to bring more new creators onto the program</li>
+                      <li>• More podcast-oriented service could potentially uproot SoundCloud for up-and-coming podcasts given lack of pushed content</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        <section class="section grid">
+          <div class="standardtext">
+            <p>Next was determining exactly what users were looking for in terms of cloud sharing, and whether there was even room for it or whether users were tired of migrating from service to
+                service. Surveys were deployed to discover what options existed.</p>
+            <p>What was discovered was that a lot of independent musicians and local bands were spread over so many different services for storage, communication, collaboration, et cetera, while many
+                music creators simply found it hard to find truly new music experiences with the prevalence of algorithmic experiences.</p>
+          </div>
+        </section>
+
+        <section class="section grid">
+          <div class="centertext">
+            <h4>What cloud storage service do you use primarily for music?</h4>
+          </div>
+        </section>
+
+        <!-- User data -->
+        <!-- Images will be replaced by charts.js objects -->
+        <section class="userdata section grid">
+          <div class="bigChart">
+            <canvas id="serviceChart"></canvas>
+          </div>
+        </section>
+
+        <section class="section innergrid">
+          <div class="sc1">
+            <canvas class="chart1" id="useChart"></canvas>
+          </div>
+          <div class="sc2">
+            <canvas class="chart2" id="importChart"></canvas>
+          </div>
+
+          <div class="stats1">
+            <h1 class="highlight">86%</h1>
+            <p>Use music services to look for new experiences at least once a week</p>
+          </div>
+          <div class="stats2">
+            <h1 class="highlight">72%</h1>
+            <p>View exposure to new music and sounds as highly important</p>
+          </div>
+        </section>
+
+        <section class="personas section innergrid">
+          <div class="standardtext">
+            <h3>User Personas</h3>
+            <p>I did a series of follow-up interviews and from these created three user profiles, one for a musician, one for a creator, and one for a listener to encompass each of the three main
+              types of users on this potential platform.</p>
+          </div>
+          <div class="buttonlink">
+            <a href="https://www.figma.com/file/0YoY9CWpTWV3dP93v675Chro/UX-User-Personas?node-id=0%3A1" class="stylebutton">View Personas</a>
+          </div>
+        </section>
+
+          <!-- Image will be replaced by CSS-built tabs -->
+          <div class="click_bg">
+            <div class="grid tabsgrid">
+              <div class="ptabs">
+
+                <input type="radio" name="ptabs" id="ptabone" checked="checked">
+                <label for="ptabone">Ray</label>
+                <div class="ptab">
+                  <img src="images/instereo/ray.png" alt="user persona ray">
+                  <div class="personatext">
+                    <h4>Motivations</h4>
+                    <ul>
+                      <li>Ray wants to experience a huge variety of different kinds of music. He currently uses cloud storage and music apps to find artists he hears songs of and store them away
+                        for later, but he’d like for the whole process to be more streamlined.</li>
+                    </ul>
+                  </div>
+                  <div class="personatext">
+                    <h4>Goals</h4>
+                    <ul>
+                      <li>• Wants the ability to explore music catalogues quickly and intuitively</li>
+                      <li>• Wants to be able to save music with easy access across any device</li>
+                    </ul>
+                  </div>
+                  <div class="personatext">
+                    <h4>Frustrations</h4>
+                    <ul>
+                      <li>• Lack of a clean interface for keeping track of artists he discovers</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <input type="radio" name="ptabs" id="ptabtwo">
+                <label for="ptabtwo">Jee</label>
+                <div class="ptab">
+                    <img src="images/instereo/jee.png" alt="user persona jee">
+                    <div class="personatext">
+                      <h4>Motivations</h4>
+                      <ul>
+                        <li>Jee wants a better workspace, rather than needing to keep everything separate. She has storage to demo, but no real easy way to work with other artists. She also wants
+                          to see community events to help push collaboration and develop new artists and music.</li>
+                      </ul>
+                    </div>
+                    <div class="personatext">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li>• Wants version control on music</li>
+                        <li>• Wants more of an all-in-one workspace, able to access music program file types</li>
+                      </ul>
+                    </div>
+                    <div class="personatext">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li>• Algorithms limit exposure to new music</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="ptabs" id="ptabthree">
+                  <label for="ptabthree">Brandon</label>
+                  <div class="ptab">
+                    <img src="images/instereo/brandon.png" alt="user persona brandon">
+                    <div class="personatext">
+                      <h4>Motivations</h4>
+                      <ul>
+                        <li>Brandon wants to expand his style and skill set. He likes jam sessions with his band and wants to find a way to expand his network of musician friends so that he can
+                          work with different people and different styles.</li>
+                      </ul>
+                    </div>
+                    <div class="personatext">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li>• Wants a solid recommendation engine to explore different genres</li>
+                        <li>• Wants an easy way to interact with and play with different musicians</li>
+                      </ul>
+                    </div>
+                    <div class="personatext">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li>• Difficulty browsing through performances of same pieces</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        <section class="user innergrid">
+            <div class="sidetext standardtext">
+              <h3>Stories, Flows & Architecture</h3>
+              <p>Next, I modeled user stories and user flows based on those profiles and the survey responses. These stories and flows were primarily concerned with the musical and file storage/sharing
+                aspects of the site, including as high priority flows the ability to access PDFs, upload music to the cloud, and the ability to discover new music on the site.</p>
+            </div>
+            <div class="buttonlink">
+              <a href="https://www.figma.com/file/TPfLZGK1y9IE33Mv5l3hRXHw/User-Flows?node-id=0%3A1" class="stylebutton">View User Flows</a>
+            </div>
+            <!-- Image will be replaced by table css -->
+            <div class="sidetable">
+              <table class="user_table">
+                <thead>
+                  <tr>
+                    <th scope="col">Role</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Importance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>As a new user</td>
+                    <td>I want to create an account</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a new user</td>
+                    <td>I want to upload music files to my account</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have access to scores/PDFs</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to have access to collaborative project files</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to have access to recommendations</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to save tracks I like</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to have a true 'random song' option</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to share songs I like</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have my scores available for review</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to record a sample that others can use</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to have version control over my files</td>
+                    <td>Medium</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have MIDI reading of scores</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have scrolling scores</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a composer/mixer</td>
+                    <td>I want to have mixing/composing competitions</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to see different performances of one piece</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to have an easy way to classify performances</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a musician/performer</td>
+                    <td>I want to connect to other users for live sessions</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to save and use music as I like</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to create and share custom playlists</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td>As a general user</td>
+                    <td>I want to view public playlists</td>
+                    <td>Low</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </section>
+
+        <div class="grey_content">
+          <section class="section grid">
+              <div class="wideimage">
+                <img src="images/instereo/uisketch.PNG" class="pimage" alt="dashboard sketches">
+              </div>
+              <div class="wideimage">
+                <img src="images/instereo/wireframes.png" class="pimage" alt="dashboard wireframe">
+              </div>
+          </section>
+        </div>
+
+        <section class="wires section innergrid">
+          <div class="standardtext">
+            <h3>Wireframes, Lofi Prototyping & User Testing</h3>
+            <p>The first round of wireframes was designed specifically for usability, to attempt to put to paper (so to speak) the user flows above while trying to flesh out the basic design of
+              the page.</p>
+          </div>
+
+          <div class="buttonlink innerlink">
+            <a href="https://www.figma.com/file/UCy885abe41lgRDWd5rdy2j4/Clickable-Version-1?node-id=0%3A1" class="stylebutton">Lofi Prototype</a>
+          </div>
+
+          <div class="standardtext">
+            <p>User testing on this clickable prototype yielded some very good information. By testing a range of users, I gathered information that allowed us to locate a number of pain points.
+              Far and above the most useful response was the individual who experienced a number of unexpected pain points that did not occur among the other two participants. Particularly, the user
+              experienced a great amount of difficulty in both the flow for uploading a file and the flow for playing a random piece of music, largely due to verbiage and unintuitive placement of
+              buttons.<br><br>
+              While this could have been overlooked if it were just one particular moment of hesitation, that it was an issue across multiple screens suggested that there were issues with the design
+              for a subset of users that needed to be addressed.</p>
+          </div>
+
+          <div class="buttonlink">
+            <a href="https://docs.google.com/document/d/1iIlLGtwDCOWAr9IIopLbTOW3HsIbXCl4IwyuYOiilv0/edit?usp=sharing" class="stylebutton">User Testing</a>
+          </div>
+        </section>
+
+        <section class="brand section innergrid">
+          <div class="standardtext">
+            <h3>Branding</h3>
+            <p>To begin the brand development process, I started with a mind map focused on music and collaboration. From there, I gave a great deal of consideration to the types of people who would
+              associate with the brand, what associations I wanted it to have, and most importantly, what to evoke in people who utilized the site. Given the subject of music, I felt that passion and
+              energy were two key watchwords to focus on.</p>
+            <h3>Logo Design</h3>
+            <p>The logo concept started with a fairly scattershot approach. Initial concepts consisted of boomboxes and music notes, then shifted to stereo faces and digital interfaces, as well as
+              paraphernalia associated with music and stereos. However, the idea that sparked the most curiosity was the waveform.<br><br>
+              I recorded myself in Audacity saying “IS”, playing at the time with the idea of the logo as initials of the brand, and used that waveform as the foundation.<br><br>
+              The logo itself went through a number of adjustments, starting initially with the “IS” concept. However, this quickly gave way to a more standard but unpolished presentation, and then
+              to a simplified but striking logo.</p>
+          </div>
+        </section>
+
+          <div class="img-cont innergrid grey_content">
+            <div class="logolarge">
+              <img src="images/instereo/logosketch.PNG" class="pimage" alt="">
+            </div>
+            <div class="logo1">
+              <img src="images/instereo/logooriginal.png" class="pimage" alt="">
+            </div>
+            <div class="logo2">
+              <img src="images/instereo/logosecond.png" class="pimage" alt="">
+            </div>
+            <div class="logo3">
+              <img src="images/instereo/logofinal.png" class="pimage" alt="">
+            </div>
+          </div>
+
+          <section class="brand section innergrid">
+          <div class="standardtext">
+            <h3>Style Guide</h3>
+            <p>I then created a comprehensive style guide for InStereo, designed to communicate the totality of InStereo’s concept and approach to music, cloud storage, and collaboration.</p>
+          </div>
+          <div class="buttonlink">
+            <a href="https://docs.google.com/presentation/d/1lIhEhssZmuYL8CPT4kJYPpJSrr4qvmeg1R8TbIR6H_Q/edit?usp=sharing" class="stylebutton">Style Guide</a>
+          </div>
+          </section>
+
+          <!-- Image will be replaced by slides -->
+          <section class="click_bg innergrid">
+            <div class="click_cont">
+            <div class="slide_cont">
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide2.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide3.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide4.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide5.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide6.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide7.png">
+              </div>
+              <div class="slide">
+                <img class="pimage" src="images/instereo/styleguide8.png">
+              </div>
+              <a class="slidebutton click_left" onClick="plusSlides(-1)">&#10094;</a>
+              <a class="slidebutton click_right" onClick="plusSlides(1)">&#10095;</a>
+            </div>
+            </div>
+          </section>
+
+          <section class="visual innergrid section">
+          <div class="standardtext">
+            <h3>Visual Design</h3>
+            <p>Taking the old mockups and the feedback I received from the first round of user testing and combining them with the brand identity, I synthesized a more complete product and
+              created prototypes.</p>
+          </div>
+          <div class="buttonlink leftside">
+            <a href="https://www.figma.com/file/CPtTy8Pfpro85G233A9pwX/Hi-Fi-Mockup-Ver-1?node-id=48%3A2" class="stylebutton">PC Prototype</a>
+          </div>
+          <div class="buttonlink rightside">
+            <a href="https://www.figma.com/file/CPtTy8Pfpro85G233A9pwX/Hi-Fi-Mockup-Ver-1?node-id=102%3A2" class="stylebutton">Mobile Prototype</a>
+          </div>
+        </section>
+
+        <section class="testing section innergrid">
+          <div class="standardtext">
+            <h3>User-Driven Development</h3>
+            <p>The second round of testing was considerably more involved, and came in two waves. The first was preference testing, which analyzed user preferences in regards to functional and
+              aesthetic approaches.</p>
+          </div>
+          <div class="smallimage left1">
+            <img src="images/instereo/ishero1.png" class="pimage" alt="instereo version 1">
+          </div>
+          <div class="smallimage right1">
+            <img src="images/instereo/ishero2.png" class="pimage" alt="instereo version 2">
+          </div>
+          <div class="standardtext">
+            <p>Next came the second round of usability testing. This time around, there were no issues  related to user flows, but instead testers conflicted over aesthetic decisions. This led to
+              a second round of preference testing, which produced near-unanimous results.</p>
+          </div>
+          <div class="buttonlink">
+            <a href="https://docs.google.com/document/d/1sIBaKJ7Z8z_B0ycwk15jp01ZHEDDcND7W2Ka_fWYULo/edit?usp=sharing" class="stylebutton">View Analysis</a>
+          </div>
+        </section>
+
+        <section class="testinginfo section innergrid">
+            <div class="colorhead-one">
+              <h3><span class="highlight">Before</span></h3>
+            </div>
+            <div class="smallimage smallleft">
+              <img src="images/instereo/oldplayer.png" class="pimage" alt="old music player">
+            </div>
+            <div class="colorhead-two">
+              <h3><span class="highlight">After</span></h3>
+            </div>
+            <div class="smallimage smallright">
+              <img src="images/instereo/newplayer.png" class="pimage" alt="new music player">
+            </div>
+        </section>
+
+        <section class="conclusion section grid">
+          <h3>Conclusion</h3>
+          <p>With regards to doubts going into the project, I felt a very real sense of imposter syndrome many times, wondering if I had any real sense of design and understanding. However, as the
+            project marched on, what surprised me was the way that individual elements, through iteration, began to congeal into a coherent whole.<br><br>
+            If given more time, I would probably have spent more time looking at sites like dribbbler for potential inspiration for more specific elements, but in forcing myself to stay the course
+            and work largely from my own concepts I think I’ve forced myself to adapt and develop in a lot of ways. Going forward in future projects, I certainly want to utilize a broader number of
+            resources for inspiration and to hopefully make some of the in-between parts less painful, to feel less frustrated and nervous with what seems like a lack of development and instead focus
+            on the iterative process to develop my own eye and a better understanding of my own personal aesthetic.</p>
+        </section>
+
+
+      <footer>
+        <div class="foot">
+          <h2>Get in touch!</h2>
+          <p>I always welcome questions and new connections.</p>
+          <ul class="socialmedia">
+            <li><a href="https://www.linkedin.com/in/andrew-repko-02727524/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/adrepko" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/theillliterate" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            <li><a href="mailto:andrewdrepko@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/chart-data-is.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147910173-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-147910173-1');
+    </script>
+  </body>
+</html>
